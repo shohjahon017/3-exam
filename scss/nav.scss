@@ -1,0 +1,103 @@
+$plus: '"Plus Jakarta Sans"';
+$gray1: rgba(240, 241, 242, 1);
+$gray: rgba(154, 158, 166, 1);
+$blue: rgba(68, 117, 242, 1);
+$blue2: rgba(229, 237, 255, 1);
+$kok: rgba(79, 125, 243, 1);
+$black: rgba(24, 30, 75, 1);
+$black2: rgba(94, 98, 130, 1);
+$white: rgba(255, 255, 255, 1);
+$shadow: rgba(68, 117, 242, 0.21);
+$kulrang: rgba(104, 109, 119, 1);
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  img {
+    cursor: pointer;
+  }
+  .nav__list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 125px;
+    margin-top: 30px;
+    gap: 40px;
+    .nav li {
+      display: flex;
+      text-align: center;
+      align-items: center;
+
+      cursor: pointer;
+    }
+    .nav {
+      display: flex;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      // line-height: 17.64px;
+      color: $gray;
+    }
+  }
+  .right__nav {
+    display: flex;
+    margin-left: 13%;
+    gap: 8px;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .nav__container {
+    .nav__list {
+      margin-left: 90px;
+      gap: 30px;
+    }
+    .right__nav {
+      margin-left: 8%;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .nav__container {
+    .nav__list {
+      margin-left: 90px;
+      gap: 30px;
+    }
+    .right__nav {
+      margin-left: 8%;
+    }
+  }
+}
+@media screen and (max-width: 968px) {
+  .nav__container {
+    .nav__list {
+      margin-left: 90px;
+      gap: 30px;
+    }
+    .right__nav {
+      margin-left: 8%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__container {
+    .nav__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // margin-left: 50px;
+      margin-top: 30px;
+      gap: 15px;
+
+      a {
+        font-size: 10px;
+      }
+    }
+    .right__nav {
+      display: flex;
+      margin-left: 13%;
+    }
+  }
+}
