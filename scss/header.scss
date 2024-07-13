@@ -1,0 +1,94 @@
+$plus: '"Plus Jakarta Sans"';
+$gray1: rgba(240, 241, 242, 1);
+$gray: rgba(154, 158, 166, 1);
+$blue: rgba(68, 117, 242, 1);
+
+.header__container {
+  display: flex;
+  margin-top: 12px;
+
+  .logo {
+    margin-left: 123px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    span {
+      font-family: $plus;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22.68px;
+    }
+  }
+  .input__box {
+    position: relative;
+  }
+  input {
+    width: 530px;
+    height: 48px;
+    padding: 0px 0px 0px 22px;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: $gray1;
+    margin-left: 40px;
+    font-family: $plus;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.12px;
+    &::placeholder {
+      padding-left: 15px;
+    }
+  }
+
+  .search {
+    position: absolute;
+    left: 50px;
+    top: 15px;
+    z-index: 1;
+  }
+  .inter {
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+    gap: 6px;
+    span {
+      font-family: $plus;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.64px;
+      color: $gray;
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 40px;
+    img {
+      cursor: pointer;
+    }
+    .locate {
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.12px;
+        color: $gray;
+      }
+      h5 {
+        display: flex;
+        font-family: $plus;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.16px;
+        color: $blue;
+        align-items: center;
+      }
+      .indonesia {
+        display: flex;
+      }
+    }
+  }
+}

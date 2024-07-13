@@ -2,6 +2,7 @@
 @import "./header.scss";
 @import "./main.scss";
 @import "./normalize.scss";
+@import "./nav.scss";
 
 $plus: '"Plus Jakarta Sans"';
 $gray1: rgba(240, 241, 242, 1);
@@ -35,95 +36,26 @@ ul {
   list-style: none;
 }
 .header__container {
-  display: flex;
-  .logo {
-    margin-left: 123px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    span {
-      font-family: $plus;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 22.68px;
-    }
-  }
-  input {
-    margin-top: 12px;
-    width: 530px;
-    height: 48px;
-    padding: 0px 0px 0px 22px;
-    gap: 10px;
-    border-radius: 30px;
-    border: none;
-    background-color: $gray1;
-    margin-left: 40px;
-    font-family: $plus;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15.12px;
-  }
-  .in {
-    position: relative;
-  }
-  .search {
-    position: absolute;
-    left: 100px;
-  }
-  .inter {
-    display: flex;
-    margin-left: 40px;
-    align-items: center;
-    gap: 6px;
-    span {
-      font-family: $plus;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 17.64px;
-      color: $gray;
-    }
-    img {
-      cursor: pointer;
-    }
-  }
-  .location {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-left: 40px;
-    img {
-      cursor: pointer;
-    }
-    .locate {
-      display: flex;
-
-      h5 {
-        display: flex;
-        font-family: $plus;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20.16px;
-        color: $blue;
-        align-items: center;
-      }
-    }
-  }
-  .line {
-    margin-top: 50px;
-    width: 1440px;
-    height: 1px;
-    border: 1px solid rgba(223, 223, 224, 1);
-  }
+  margin-top: 12px;
 }
+.line {
+  margin-top: 20px;
+  width: 100%px;
+  height: 1px;
+  border: 1px solid rgba(223, 223, 224, 1);
+}
+
 .nav__container {
   display: flex;
   align-items: center;
-
+  img {
+    cursor: pointer;
+  }
   .nav__list {
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: 90px;
+    margin-left: 125px;
     margin-top: 30px;
     gap: 40px;
     .li {
@@ -136,15 +68,16 @@ ul {
     a {
       font-size: 14px;
       font-weight: 400;
-      line-height: 17.64px;
+      // line-height: 17.64px;
       color: $gray;
     }
   }
   .right__nav {
     display: flex;
-    margin-left: 300px;
+    margin-left: 13%;
     gap: 8px;
     align-items: center;
+    margin-top: 10px;
   }
 }
 .main__container {
@@ -212,6 +145,7 @@ ul {
     // position: absolute;
     display: flex;
     width: 50px;
+    position: relative;
     height: 50px;
     background-color: $white;
     border: 1px solid $blue;
@@ -237,7 +171,6 @@ ul {
   .putar {
     display: flex;
     align-items: center;
-    text-align: center;
   }
   .photo {
     margin-top: 20px;
@@ -245,6 +178,42 @@ ul {
 }
 .logo__container {
   display: flex;
-  gap: 85px;
   align-items: center;
+  .logos {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    margin-left: 125px;
+  }
+  .logos1 {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    max-width: 1020px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 968px;
+  }
+}
+@media screen and (max-width: 968px) {
+  .container {
+    max-width: 786px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .container {
+    max-width: 400px;
+  }
 }
